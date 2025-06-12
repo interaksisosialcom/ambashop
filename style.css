@@ -1,0 +1,54 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #f0f0f0;
+  color: #333;
+}
+header, footer {
+  background: #004080;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+nav a {
+  margin: 0 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+main {
+  padding: 1rem;
+}
+.produk-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.produk-card {
+  background: #fff;
+  padding: 1rem;
+  width: 200px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.produk-card img {
+  width: 100%;
+}
+button {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: #004080;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: #0066cc;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+input {
+  padding: 0.5rem;
+  width: 100%;
+}

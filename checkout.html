@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Checkout</h1>
+    <nav>
+      <a href="index.html">Beranda</a>
+    </nav>
+  </header>
+
+  <main>
+    <form onsubmit="prosesCheckout(event)">
+      <label>Nama Lengkap: <input type="text" required /></label>
+      <label>Alamat: <input type="text" required /></label>
+      <label>No. HP: <input type="tel" required /></label>
+      <button type="submit">Proses Pesanan</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ambashop</p>
+  </footer>
+
+  <script>
+    function prosesCheckout(e) {
+      e.preventDefault();
+      alert('Pesanan Anda berhasil diproses!');
+      localStorage.removeItem('keranjang');
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>
